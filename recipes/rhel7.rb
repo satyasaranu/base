@@ -5,3 +5,11 @@ cookbook_file '/etc/motd' do
   mode '0755'
   action :create
 end
+template '/etc/resolv.conf' do
+  source 'resolv.conf.erb'
+  owner 'root'
+  group 'root'
+  mode '0755'
+  action :create
+end
+
