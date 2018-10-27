@@ -4,8 +4,6 @@
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
-include_recipe "base::rhel7"
-include_recipe "base::rhel6"
 case node['platform_family']
 when "rhel"
     if node['platform_version'].to_f >= 7.0
