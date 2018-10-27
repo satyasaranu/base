@@ -14,6 +14,3 @@ when "rhel"
         include_recipe "base::rhel6"
     end
 end
-
-case 
-
